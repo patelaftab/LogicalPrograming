@@ -12,13 +12,18 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome To Logical Programing Programs\n" +
                 "Choose a given Option \n" +
-                "1: Fibonacci Series Program");
+                "1: Fibonacci Series Program\n" +
+                "2: Prime Number program");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
                 case 1:
                     FibonacciSeries fibonacciSeries = new FibonacciSeries();
                     fibonacciSeries.Fibonacci();
+                    break;
+                case 2:
+                    PrimeNnumbers primeNnumbers = new PrimeNnumbers();
+                    primeNnumbers.Checkprimenumbers();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct Option");
