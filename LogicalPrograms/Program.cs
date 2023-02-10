@@ -14,7 +14,8 @@ namespace LogicalPrograms
                 "Choose a given Option \n" +
                 "1: Fibonacci Series Program\n" +
                 "2: Prime Number program\n" +
-                "3: Reverse Number Program");
+                "3: Reverse Number Program\n" +
+                "4: Perfect Number Program\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -29,6 +30,10 @@ namespace LogicalPrograms
                 case 3:
                     ReverseNumber reverseNumber = new ReverseNumber();
                     reverseNumber.Chekingreversenumber();
+                    break;
+                case 4:
+                    PerfectNumber perfectNumber = new PerfectNumber();
+                    perfectNumber.Checkingperfectnumber();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct Option");
